@@ -6,12 +6,12 @@ const hdbars = require('express-handlebars');
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({extended:false});
 const sql = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'admin',
+    host: 'us-cdbr-east-03.cleardb.com',
+    user: 'b6e3a65e4c4ff2',
+    password: 'aeb5002e',
     port: 3306,
 });
-sql.query('USE crudnode')
+sql.query('USE heroku_78997774829e826')
 
 //TEMPLATE ENGINE
 app.engine('handlebars',hdbars  ({defaultLayout:'Main'}));
