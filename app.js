@@ -94,6 +94,6 @@ app.post('/controllerUpd',urlencodedParser,function(req,res){
 })
 
 //INICIAR O SERVIDOR
-app.listen(3000, (req, res) => {console.log('servidor rodando')});
+app.listen(process.env.PORT || 3000);
 
 
