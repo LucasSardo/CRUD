@@ -9,7 +9,9 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "start": "nodemon app.js"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
