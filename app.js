@@ -4,7 +4,7 @@ const express = require('express');
 const mysql = require('mysql');
 const hdbars = require('express-handlebars');
 const app = express();
-const urlencodedParser = bodyParser.urlencoded({extended:false});
+const urlencodedParser = express.urlencoded({extended:false});
 
 
 
