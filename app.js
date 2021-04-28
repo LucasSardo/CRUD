@@ -1,10 +1,14 @@
 //ESSA É A PARTE QUE TRABALHA NO LADO DO SERVIDOR (BACK-END)
 const express = require('express');
-const bodyParser = require('body-Parser');
+//const bodyParser = require('body-Parser');
 const mysql = require('mysql');
 const hdbars = require('express-handlebars');
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({extended:false});
+
+
+
+
 const sql = mysql.createConnection({
     host: 'us-cdbr-east-03.cleardb.com',
     user: 'b6e3a65e4c4ff2',
